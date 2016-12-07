@@ -1,0 +1,78 @@
+[class*=event-] {
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  border-width: 2px;
+  border-color: #FFF;
+  border-style: solid;
+}
+
+.event-theft {
+  background: rgba(85, 162, 39, 0.8);
+  border-color: rgba(85, 162, 39, 1);
+}
+
+.event-robbery {
+  background: rgba(187, 63, 66, 0.8);
+  border-color: rgba(187, 63, 66, 1);
+}
+
+.event-burglary {
+  background: rgba(66, 139, 201, 0.8);
+  border-color: rgba(66, 139, 201, 1);
+}
+
+.event-auto-theft {
+  background: rgba(61, 61, 61, 0.8);
+  border-color: rgba(61, 61, 61, 1);
+}
+
+.event-aggravated-assault {
+  background: rgba(142, 80, 201, 0.8);
+  border-color: rgba(142, 80, 201, 1);
+}
+
+.event-murder {
+  background: rgba(195, 134, 56, 0.8);
+  border-color: rgba(195, 134, 56, 1);
+}
+
+.event-rape {
+  background: rgba(205, 189, 60, 0.8);
+  border-color: rgba(205, 189, 60, 1);
+}
+
+.event-to-animate {
+  display: none;
+  transition: opacity 0.1s linear;
+  opacity: 0;
+}
+
+.event-to-animate.happening {
+  opacity: 1;
+}
+
+.event-to-animate.leaving {
+  transition: opacity 20s linear;
+  opacity: 0;
+}
+
+[class*=event-][data-description]::after {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 180px;
+  padding: 10px;
+  box-sizing: border-box;
+  content: attr(data-description);
+  display: none;
+}
+
+[class*=event-][data-description]:hover {
+  opacity: 1 !important;
+}
+
+[class*=event-][data-description]:hover::after {
+  display: block;
+}
+

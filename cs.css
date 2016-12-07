@@ -1,0 +1,17 @@
+body {
+  background-color: #0277bd;
+}
+font {
+  color: #0277bd;
+}
+#mapid { height: 600px; }
+img{
+    display: inline;
+}
+
+a {
+   color: yellow;
+   font-family: "Times New Roman", Times, serif;
+   font-size: 180%;
+   display: inline;
+}

@@ -1,2 +1,2 @@
-# acrime
-attempt to control Amanda's animation
+# jcrime
+first thirty day grab
